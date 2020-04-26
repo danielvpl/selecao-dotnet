@@ -1,0 +1,45 @@
+<h3>Payment - Credit Card</h3>
+<h2>Valor: R$14,90</h2>
+<form [formGroup]="registerForm" (ngSubmit)="onFormSubmit2()">
+
+  <div class="form-group">
+    <label for="number">Credit Card Number</label>
+    <input type="text" formControlName="number" class="form-control" [ngClass]="{ 'is-invalid': submitted && fval.number.errors }" placeholder="Enter Credit Card Number here" />
+    <div *ngIf="submitted && fval.number.errors" class="invalid-feedback">
+      <div *ngIf="fval.number.errors.required">Credit Card Number is required</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="validuntil">Valid Until</label>
+    <input type="text" formControlName="validuntil" class="form-control" [ngClass]="{ 'is-invalid': submitted && fval.validuntil.errors }" placeholder="Enter Valid Until Date here" />
+    <div *ngIf="submitted && fval.validuntil.errors" class="invalid-feedback">
+      <div *ngIf="fval.validuntil.errors.required">Valid Unitl Date is required</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="nameoncard">Name on Card</label>
+    <input type="text" formControlName="nameoncard" class="form-control" [ngClass]="{ 'is-invalid': submitted && fval.nameoncard.errors }" placeholder="Enter the Name On Card here" />
+    <div *ngIf="submitted && fval.nameoncard.errors" class="invalid-feedback">
+      <div *ngIf="fval.nameoncard.errors.required">Name on Card is required</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="scode">Security Code</label>
+    <input type="text" formControlName="scode" class="form-control" [ngClass]="{ 'is-invalid': submitted && fval.scode.errors }" placeholder="Enter the Card Security Code here" />
+    <div *ngIf="submitted && fval.scode.errors" class="invalid-feedback">
+      <div *ngIf="fval.scode.errors.required">Security Code is required</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <button [disabled]="loading" class="btn btn-primary">
+      <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+      Confirm Payment
+    </button>
+    <a routerLink="/home" class="btn btn-link">Home</a>
+  </div>
+
+</form>

@@ -1,0 +1,9 @@
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.Models\bin\Debug\netstandard2.0\CoursesOnDemand.Domain.deps.json
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.Models\bin\Debug\netstandard2.0\CoursesOnDemand.Domain.dll
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.Models\bin\Debug\netstandard2.0\CoursesOnDemand.Domain.pdb
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.Models\obj\Debug\netstandard2.0\CoursesOnDemand.Domain.csproj.CoreCompileInputs.cache
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.Models\obj\Debug\netstandard2.0\CoursesOnDemand.Domain.AssemblyInfoInputs.cache
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.Models\obj\Debug\netstandard2.0\CoursesOnDemand.Domain.AssemblyInfo.cs
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.Models\obj\Debug\netstandard2.0\CoursesOnDemand.Domain.dll
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.Models\obj\Debug\netstandard2.0\CoursesOnDemand.Domain.pdb
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.Models\obj\Debug\netstandard2.0\CoursesOnDemand.Domain.csprojAssemblyReference.cache

@@ -1,0 +1,12 @@
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.Repository\bin\Debug\netstandard2.0\CoursesOnDemand.Repository.deps.json
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.Repository\bin\Debug\netstandard2.0\CoursesOnDemand.Repository.dll
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.Repository\bin\Debug\netstandard2.0\CoursesOnDemand.Repository.pdb
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.Repository\bin\Debug\netstandard2.0\CoursesOnDemand.Domain.dll
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.Repository\bin\Debug\netstandard2.0\CoursesOnDemand.Domain.pdb
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.Repository\obj\Debug\netstandard2.0\CoursesOnDemand.Repository.csprojAssemblyReference.cache
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.Repository\obj\Debug\netstandard2.0\CoursesOnDemand.Repository.csproj.CoreCompileInputs.cache
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.Repository\obj\Debug\netstandard2.0\CoursesOnDemand.Repository.AssemblyInfoInputs.cache
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.Repository\obj\Debug\netstandard2.0\CoursesOnDemand.Repository.AssemblyInfo.cs
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.Repository\obj\Debug\netstandard2.0\CoursesOnDemand.Repository.csproj.CopyComplete
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.Repository\obj\Debug\netstandard2.0\CoursesOnDemand.Repository.dll
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.Repository\obj\Debug\netstandard2.0\CoursesOnDemand.Repository.pdb

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "R8iurMYhQjHKosAYvTRmeEqtt5t/W4pYqnjfqMDp8mnRMUe1xsjHcBFD6UFnaJ+KvY7JmyGE9yxq7mxfV0aqAA==",
+  "success": true,
+  "projectFilePath": "D:\\Projetos\\Projetos_Indra\\selecao-dotnet\\courses-ondemand\\CoursesOnDemand.Repository\\CoursesOnDemand.Repository.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Daniel Viana\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

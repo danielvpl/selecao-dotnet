@@ -1,0 +1,18 @@
+
+<!-- main app container -->
+  <div class="jumbotron" style="min-height:200px;">
+    <div style="float:left">
+      <a *ngIf="currentUser" class="nav-item nav-link" style="cursor:pointer;" routerLink="/home">Home</a>
+      <a *ngIf="currentUser" class="nav-item nav-link" style="cursor:pointer;" routerLink="/register">Profile</a>
+      <a *ngIf="currentUser" class="nav-item nav-link" style="cursor:pointer;" routerLink="/payment">Payment</a>
+      <a *ngIf="currentUser" class="nav-item nav-link" style="cursor:pointer;" routerLink="/courses">Courses</a>
+      <a *ngIf="currentUser" class="nav-item nav-link" style="cursor:pointer;" (click)="logout()">Logout</a>
+    </div>
+    <div class="container" style="min-height:200px">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
