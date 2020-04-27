@@ -3,3 +3,10 @@ D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.UnitT
 D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.UnitTests\obj\Debug\netstandard2.0\CoursesOnDemand.UnitTests.csprojAssemblyReference.cache
 D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.UnitTests\obj\Debug\netstandard2.0\CoursesOnDemand.UnitTests.AssemblyInfoInputs.cache
 D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.UnitTests\obj\Debug\netstandard2.0\CoursesOnDemand.UnitTests.AssemblyInfo.cs
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.UnitTests\bin\Debug\netstandard2.0\CoursesOnDemand.UnitTests.pdb
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.UnitTests\bin\Debug\netstandard2.0\CoursesOnDemand.Domain.dll
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.UnitTests\bin\Debug\netstandard2.0\CoursesOnDemand.Domain.pdb
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.UnitTests\obj\Debug\netstandard2.0\CoursesOnDemand.UnitTests.csproj.CoreCompileInputs.cache
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.UnitTests\obj\Debug\netstandard2.0\CoursesOnDemand.UnitTests.csproj.CopyComplete
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.UnitTests\obj\Debug\netstandard2.0\CoursesOnDemand.UnitTests.dll
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.UnitTests\obj\Debug\netstandard2.0\CoursesOnDemand.UnitTests.pdb

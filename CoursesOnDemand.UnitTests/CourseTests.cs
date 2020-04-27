@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CoursesOnDemand.UnitTests
 {
+    [TestClass]
     class CourseTests
     {
         [TestMethod]
