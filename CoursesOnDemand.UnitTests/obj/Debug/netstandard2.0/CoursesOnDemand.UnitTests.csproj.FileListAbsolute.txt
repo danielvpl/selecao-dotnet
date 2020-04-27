@@ -1,0 +1,5 @@
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.UnitTests\bin\Debug\netstandard2.0\CoursesOnDemand.UnitTests.deps.json
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.UnitTests\bin\Debug\netstandard2.0\CoursesOnDemand.UnitTests.dll
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.UnitTests\obj\Debug\netstandard2.0\CoursesOnDemand.UnitTests.csprojAssemblyReference.cache
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.UnitTests\obj\Debug\netstandard2.0\CoursesOnDemand.UnitTests.AssemblyInfoInputs.cache
+D:\Projetos\Projetos_Indra\selecao-dotnet\courses-ondemand\CoursesOnDemand.UnitTests\obj\Debug\netstandard2.0\CoursesOnDemand.UnitTests.AssemblyInfo.cs

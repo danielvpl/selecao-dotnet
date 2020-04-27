@@ -8,9 +8,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoursesOnDemand", "CoursesO
 		{98618CA3-E890-45CF-8C99-BB3DAC8472BC} = {98618CA3-E890-45CF-8C99-BB3DAC8472BC}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoursesOnDemand.Domain", "CoursesOnDemand.Models\CoursesOnDemand.Domain.csproj", "{6EDA614E-650B-4422-AA02-0458A36996FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoursesOnDemand.Domain", "CoursesOnDemand.Models\CoursesOnDemand.Domain.csproj", "{6EDA614E-650B-4422-AA02-0458A36996FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoursesOnDemand.Repository", "CoursesOnDemand.Repository\CoursesOnDemand.Repository.csproj", "{98618CA3-E890-45CF-8C99-BB3DAC8472BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoursesOnDemand.Repository", "CoursesOnDemand.Repository\CoursesOnDemand.Repository.csproj", "{98618CA3-E890-45CF-8C99-BB3DAC8472BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoursesOnDemand.UnitTests", "CoursesOnDemand.UnitTests\CoursesOnDemand.UnitTests.csproj", "{1A2A5C27-BCF9-4971-95D2-18BC6DA2153C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +32,10 @@ Global
 		{98618CA3-E890-45CF-8C99-BB3DAC8472BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98618CA3-E890-45CF-8C99-BB3DAC8472BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98618CA3-E890-45CF-8C99-BB3DAC8472BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A2A5C27-BCF9-4971-95D2-18BC6DA2153C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A2A5C27-BCF9-4971-95D2-18BC6DA2153C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A2A5C27-BCF9-4971-95D2-18BC6DA2153C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A2A5C27-BCF9-4971-95D2-18BC6DA2153C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
