@@ -10,6 +10,6 @@ export class Student {
   //User data attributes
   password: string;
   token: string;
-  Course: Course;
-  CreditCard: CreditCard
+  course: Course;
+  creditcard: CreditCard
 }

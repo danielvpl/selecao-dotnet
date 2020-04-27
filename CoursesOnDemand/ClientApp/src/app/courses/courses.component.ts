@@ -30,11 +30,17 @@ export class CoursesComponent {
   submitted = false;
   currentUser: Student;
   registerForm: FormGroup;
+  selectedCourse: number;
 
   ngOnInit() {
     this.currentUser = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')) : '';
+    if (this.currentUser.course) {
+      this.selectedCourse = this.currentUser.course.id;
+    } else {
+      this.selectedCourse = 0;
+    }
     this.registerForm = this.formBuilder.group({
-      idcourse: ['1', Validators.required]      
+      idcourse: ['', Validators.required]
     });
   }
 
@@ -42,11 +48,15 @@ export class CoursesComponent {
   
   onFormSubmit3() {
     this.currentUser = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')) : '';
+
     this.submitted = true;
     // return for here if form is invalid
+    if (this.registerForm.invalid) {
+      return;
+    }
     this.loading = true;
 
-    if (this.currentUser.token) {
+    if (this.currentUser.token) {      
       this.userService.setcourse(this.currentUser.id, parseInt(this.fval.idcourse.value)).subscribe(
         (data) => {
           alert('Course Registered Successfully! An email was sent to [' + this.currentUser.email+']');

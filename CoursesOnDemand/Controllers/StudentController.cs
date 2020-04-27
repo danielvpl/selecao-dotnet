@@ -45,19 +45,6 @@ namespace CoursesOnDemand.Controllers
         }
 
         /// <summary>
-        /// Save a student register
-        /// </summary>
-        /// <param name="value"></param>
-        //POST: api/Student
-        [HttpPost]
-        public void Post(Student value)
-        {
-            InitializeStudentRegister(value);
-            //Saving object
-            PersisteContext.Students.Add(value);
-        }        
-
-        /// <summary>
         /// Save credit card info and set payments
         /// </summary>
         /// <param name="id"></param>
@@ -105,55 +92,6 @@ namespace CoursesOnDemand.Controllers
                 return Ok(user);
             }
             return BadRequest("Profile information needs to be updated!");
-        }
-
-        /// <summary>
-        /// Do Login Method
-        /// </summary>
-        /// <param name="value"></param>
-        /// <returns></returns>
-        [HttpPost("/user/login")]
-        public IActionResult Login([FromBody]UserLoginModel value)
-        {
-            Student user = (from s in PersisteContext.Students where s.Login != null && s.Login.Equals(value.Email) && s.Password.Equals(value.Password) select s).FirstOrDefault();
-            if(user != null)
-            {
-                user.Token = new Random().Next(10000, 99999).ToString();
-                return Ok(user);
-            }
-            return BadRequest("Not Authorized!");
-        }
-
-        /// <summary>
-        /// Insert or update student registers
-        /// </summary>
-        /// <param name="id"></param>
-        /// <param name="value"></param>
-        // PUT: api/Student/5
-        [HttpPut("{id}")]
-        public void Put(long id, Student value)
-        {
-            var user = (from s in PersisteContext.Students where s.Id == id select s).FirstOrDefault();
-            if (user == null)
-            {
-                InitializeStudentRegister(value);
-                PersisteContext.Students.Add(value);
-            }
-            else
-            {
-                var forUpdate = PersisteContext.Students.Where(c => c.Id == id).ToList();
-                forUpdate.ForEach(c =>
-                {
-                    c.FirstName = value.FirstName;
-                    c.LastName = value.LastName;
-                    c.Email = value.Email;
-                    c.Phone = value.Phone;
-                    c.CreditCard = value.CreditCard;
-                    c.Course = value.Course;
-                    c.Login = value.Email;
-                    c.Password = value.Password;
-                });
-            }
         }
 
         /// <summary>

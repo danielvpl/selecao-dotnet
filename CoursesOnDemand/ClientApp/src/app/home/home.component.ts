@@ -10,11 +10,11 @@ export class HomeComponent implements OnInit {
   public currentUser: Student;
 
   constructor() {
-    this.currentUser = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')) : '';    
+    
    }
 
   ngOnInit() {
-
+    this.currentUser = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')) : '';    
   }
 
 }

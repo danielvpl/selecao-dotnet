@@ -23,14 +23,24 @@ export class PaymentComponent implements OnInit {
   currentUser: Student
   loading = false;
   submitted = false;
+  number: string;
+  validuntil: string;
+  nameoncard: string;
+  scode: string;
 
   ngOnInit() {
     this.currentUser = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')) : '';
-    this.registerForm = this.formBuilder.group({
-      number: ['', Validators.required],
-      validuntil: ['', Validators.required],
-      nameoncard: ['', Validators.required],
-      scode: ['', Validators.required]
+    if (this.currentUser.creditCard) {
+      this.number = this.currentUser.creditCard.number;
+      this.validuntil = this.currentUser.creditCard.validUntil;
+      this.nameoncard = this.currentUser.creditCard.nameOnCard;
+      this.scode = this.currentUser.creditCard.sCode;
+    }
+    this.registerForm = this.formBuilder.group({      
+      number: [this.number, Validators.required],
+      validuntil: [this.validuntil, Validators.required],
+      nameoncard: [this.nameoncard, Validators.required],
+      scode: [this.scode, Validators.required]
     });
   }
 
