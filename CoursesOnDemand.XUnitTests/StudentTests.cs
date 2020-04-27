@@ -25,6 +25,7 @@ namespace CoursesOnDemand.UnitTests
 
         [Theory]
         [InlineData("Daniel")]
+        [InlineData("")]
         public void ChangeStudentName(string firstname)
         {
             Assert.False(string.IsNullOrEmpty(firstname));
