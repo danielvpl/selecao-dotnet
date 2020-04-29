@@ -18,7 +18,7 @@ namespace CoursesOnDemand.Controllers
         //Initializing de static list of objects
         public UserController()
         {
-            PersisteContext.Students = (PersisteContext.Students == null) ? new List<Student>() : PersisteContext.Students;
+            FakeRepository.Students = (FakeRepository.Students == null) ? new List<Student>() : FakeRepository.Students;
         }
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace CoursesOnDemand.Controllers
         {
             StudentController.InitializeStudentRegister(value);
             //Saving object
-            PersisteContext.Students.Add(value);
+            FakeRepository.Students.Add(value);
         }
 
         /// <summary>
@@ -43,15 +43,15 @@ namespace CoursesOnDemand.Controllers
         [HttpPut("{id}")]
         public void Put(long id, Student value)
         {
-            var user = (from s in PersisteContext.Students where s.Id == id select s).FirstOrDefault();
+            var user = (from s in FakeRepository.Students where s.Id == id select s).FirstOrDefault();
             if (user == null)
             {
                 StudentController.InitializeStudentRegister(value);
-                PersisteContext.Students.Add(value);
+                FakeRepository.Students.Add(value);
             }
             else
             {
-                var forUpdate = PersisteContext.Students.Where(c => c.Id == id).ToList();
+                var forUpdate = FakeRepository.Students.Where(c => c.Id == id).ToList();
                 forUpdate.ForEach(c =>
                 {
                     c.FirstName = value.FirstName;
@@ -74,7 +74,7 @@ namespace CoursesOnDemand.Controllers
         [HttpPost("/user/login")]
         public IActionResult Login([FromBody]UserLoginModel value)
         {
-            Student user = (from s in PersisteContext.Students where s.Login != null && s.Login.Equals(value.Email) && s.Password.Equals(value.Password) select s).FirstOrDefault();
+            Student user = (from s in FakeRepository.Students where s.Login != null && s.Login.Equals(value.Email) && s.Password.Equals(value.Password) select s).FirstOrDefault();
             if (user != null)
             {
                 user.Token = new Random().Next(10000, 99999).ToString();

@@ -16,14 +16,14 @@ namespace CoursesOnDemand.Controllers
         //Initializing de static list of objects
         public CourseController()
         {
-            PersisteContext.Courses = PersisteContext.Courses == null ?
+            FakeRepository.Courses = FakeRepository.Courses == null ?
                 new List<Course>() { 
                     new Course() { Id = 1, Title = ".NET Core C#", Description = ".NET Core C# Course" },
                     new Course() { Id = 2, Title = "Angular 8", Description = "Angular 8 Course" },
                     new Course() { Id = 3, Title = "EntityFramework", Description = "EntityFramework Course" },
                     new Course() { Id = 4, Title = "Scrum Methodology", Description = "Scrum Methodology Course" }
                 }               
-            : PersisteContext.Courses;
+            : FakeRepository.Courses;
         }
 
         /// <summary>
@@ -34,7 +34,7 @@ namespace CoursesOnDemand.Controllers
         [HttpGet]
         public IEnumerable<Course> Get()
         {
-            return PersisteContext.Courses;
+            return FakeRepository.Courses;
         }
 
         /// <summary>
@@ -46,7 +46,7 @@ namespace CoursesOnDemand.Controllers
         [HttpGet("{id}")]
         public Course Get(int id)
         {
-            return (from s in PersisteContext.Courses where s.Id == id select s).FirstOrDefault();
+            return (from s in FakeRepository.Courses where s.Id == id select s).FirstOrDefault();
         }
 
         /// <summary>
@@ -57,7 +57,7 @@ namespace CoursesOnDemand.Controllers
         [HttpPost]
         public void Post(Course value)
         {
-            PersisteContext.Courses.Add(value);
+            FakeRepository.Courses.Add(value);
         }
 
         /// <summary>
@@ -69,7 +69,7 @@ namespace CoursesOnDemand.Controllers
         [HttpPut("{id}")]
         public void Put(int id, Course value)
         {
-            var forUpdate = PersisteContext.Courses.Where(c => c.Id == id).ToList();
+            var forUpdate = FakeRepository.Courses.Where(c => c.Id == id).ToList();
             forUpdate.ForEach(c =>
             {
                 c.Title = value.Title;
@@ -85,7 +85,7 @@ namespace CoursesOnDemand.Controllers
         [HttpDelete("{id}")]
         public void Delete(long id)
         {
-            PersisteContext.Courses.RemoveAll((x) => x.Id == id);
+            FakeRepository.Courses.RemoveAll((x) => x.Id == id);
         }
     }
 }
