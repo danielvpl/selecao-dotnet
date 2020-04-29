@@ -18,7 +18,7 @@ namespace CoursesOnDemand.Controllers
         //Initializing de static list of objects
         public StudentController()
         {
-            PersisteContext.Students = (PersisteContext.Students == null) ? new List<Student>() : PersisteContext.Students;
+            FakeRepository.Students = (FakeRepository.Students == null) ? new List<Student>() : FakeRepository.Students;
         }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace CoursesOnDemand.Controllers
         [HttpGet]
         public IEnumerable<Student> Get()
         {
-            return PersisteContext.Students;
+            return FakeRepository.Students;
         }
 
         /// <summary>
@@ -41,7 +41,7 @@ namespace CoursesOnDemand.Controllers
         [HttpGet("{id}")]
         public Student Get(long id)
         {
-            return (from s in PersisteContext.Students where s.Id == id select s).FirstOrDefault();
+            return (from s in FakeRepository.Students where s.Id == id select s).FirstOrDefault();
         }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace CoursesOnDemand.Controllers
         public IActionResult SetCard(String id, CreditCard value)
         {
             long idstudent = long.Parse(id);
-            Student user = (from s in PersisteContext.Students where s.Id == idstudent select s).FirstOrDefault();
+            Student user = (from s in FakeRepository.Students where s.Id == idstudent select s).FirstOrDefault();
             if (user != null)
             {
                 //Adding Credit Card Info
@@ -80,14 +80,14 @@ namespace CoursesOnDemand.Controllers
         [HttpPost("/student/setcourse")]
         public IActionResult SetCourse([FromBody]StudentSetCourse value)
         {
-            var user = (from s in PersisteContext.Students where s.Id == value.IdStudent select s).FirstOrDefault();
+            var user = (from s in FakeRepository.Students where s.Id == value.IdStudent select s).FirstOrDefault();
             if(user != null)
             {
                 if(user.Payments == null || user.Payments.Count == 0)
                 {
                     return BadRequest("The Student Made no Payment!");
                 }
-                Course course = (from c in PersisteContext.Courses where c.Id == value.IdCourse select c).FirstOrDefault();
+                Course course = (from c in FakeRepository.Courses where c.Id == value.IdCourse select c).FirstOrDefault();
                 user.Course = course;
                 return Ok(user);
             }
@@ -102,12 +102,12 @@ namespace CoursesOnDemand.Controllers
         [HttpDelete("{id}")]
         public void Delete(long id)
         {
-            PersisteContext.Students.RemoveAll((x) => x.Id == id);
+            FakeRepository.Students.RemoveAll((x) => x.Id == id);
         }
 
         public static void InitializeStudentRegister(Student value)
         {
-            value.Id = PersisteContext.Students.Count + 1;
+            value.Id = FakeRepository.Students.Count + 1;
             value.Login = value.Email;
             //Initializing empty list of courses and payments
             value.Course = new Course() { Id = 0, Title = "", Description = ""};
